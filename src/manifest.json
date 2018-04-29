@@ -1,7 +1,7 @@
 ﻿{
 	"manifest_version": 2,
 	"name": "removeZhihuPrivacyPolicy",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"icons": {
 		"48": "./img/find.png",
 		"64": "./img/find.png",
