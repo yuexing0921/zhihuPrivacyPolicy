@@ -1,0 +1,21 @@
+﻿{
+	"manifest_version": 2,
+	"name": "去除知乎隐私协议",
+	"version": "0.0.1",
+	"icons": {
+		"48": "./img/find.png",
+		"64": "./img/find.png",
+		"128": "./img/find.png"
+	},
+	"browser_action": {
+		"default_icon": "./img/find.png" 
+	},
+	"permissions": ["http://*/*", "https://*/*","activeTab","tabs","webRequestBlocking","webRequest"],
+	"content_scripts": [{
+		"matches": [ 
+			"https://www.zhihu.com/*"
+		],
+		"js": ["jquery-2.0.0.min.js",  "script.js"]
+	}],
+	"content_security_policy": "script-src 'self' https://ssl.google-analytics.com  ; object-src 'self'"
+}
