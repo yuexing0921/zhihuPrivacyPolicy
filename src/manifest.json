@@ -1,6 +1,6 @@
 ﻿{
 	"manifest_version": 2,
-	"name": "removeZhihuPrivacyPolicy",
+	"name": "删除知乎用户隐私弹窗",
 	"version": "0.0.2",
 	"icons": {
 		"48": "./img/find.png",
@@ -13,7 +13,7 @@
 	"permissions": ["http://*/*", "https://*/*","activeTab","tabs","webRequestBlocking","webRequest"],
 	"content_scripts": [{
 		"matches": [ 
-			"https://www.zhihu.com/*"
+			"https://*.zhihu.com/*"
 		],
 		"js": ["jquery-2.0.0.min.js",  "script.js"]
 	}],
